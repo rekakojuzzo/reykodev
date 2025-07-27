@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #181a1b;
+  color: #eaeaea;
+  font-family: 'JetBrains Mono', monospace;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.main-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #181a1b;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #ffb86c;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #8be9fd;
+  margin-bottom: 2em;
+}
+
+.contacts {
+  margin-top: 2em;
+}
+
+.show-contact-btn {
+  background: #282a36;
+  color: #50fa7b;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: background 0.3s, color 0.3s;
+}
+.show-contact-btn:hover {
+  background: #44475a;
+  color: #ff79c6;
+}
+
+.contact-link {
+  color: #50fa7b;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.contact-link:hover {
+  color: #ff79c6;
+}
